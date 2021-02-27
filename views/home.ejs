@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>WEATHER</title>
+    <style>
+        body{
+            padding: 0;
+            margin:0;
+            background-color: rgb(0, 108,233);
+        }
+        #div1{
+            text-align: center;
+            margin-top: 10vh;
+        }
+        #div2{
+            text-align: center;
+            margin-top: 10vh;
+        }
+        
+        #in{
+            background: none;
+            border:0;
+            border-bottom: 2px solid red;
+            font-size: 30px;
+        }
+        ::placeholder{
+            color: white;
+            font-size: 20px;
+        }
+        h1{
+            color: white;
+        }
+        form{
+            margin-top: 15 vh;
+        }
+        #btn{
+            font-size: 20px;
+            border: 4px solid red;
+            border-radius: 4px;
+            background-color: red;
+            color: white;
+        }
+        #btn:hover{
+            background-color: white;
+            border: 4px solid white;
+            color:red;
+        }
+        #box{
+            text-align: center;
+            margin: auto;
+            height: 100%;
+            width: 30%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <div id="div1"> <h1>WEATHER   APP </h1></div>
+    <div id="div2">
+        <form>
+            <input id="in" type="text" placeholder="Search for city">
+                <button id="btn">
+                    submit
+                </button>
+        </form>
+</div>
+    <div id="box">
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
