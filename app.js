@@ -2,6 +2,8 @@ const express=require('express');
 const path=require("path");
 const request=require("request");
 
+const port=process.env.PORT || 3000;
+
 const app=express();
 app.use(express.static(path.join(__dirname,'public')));
 app.set("view engine","ejs");
@@ -15,4 +17,4 @@ app.get("/weather/:data",(req,res)=>{
         res.json(data);
         })        
 })
-app.listen(3000);
+app.listen(port);
